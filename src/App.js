@@ -7,8 +7,6 @@ function App() {
   const {loading,error,errorMsg,cart} = useGlobalContext();
 
   let msg = ''
-  {(cart.length > 0) && <h1 className="msg">Shopping Cart</h1>}
-  {(cart.length === 0) && <h1 className="msg">There is nothing here</h1>}
 
   if (loading) {
     msg = 'Loading...';

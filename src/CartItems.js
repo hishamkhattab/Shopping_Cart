@@ -7,10 +7,6 @@ const CartItems = () => {
 
     return (
         <section className="items-container">
-
-        {/* {(cart.length > 0) && <h1 className="msg">Shopping Cart</h1>}
-        {(cart.length === 0) && <h1 className="msg">There is nothing here</h1>} */}
-
         {cart.map(item => {
             return (
                 <div key={item.id} className="item-wrapper">
